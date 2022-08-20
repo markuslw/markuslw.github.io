@@ -3,7 +3,6 @@ main{
     font-size:20px;
 }
 main h1{
-    background-color:black;
     color:grey;
     text-align: center;
     font-family:Arial;
@@ -16,10 +15,18 @@ main h2{
     font-family:Arial;
     font-size: 30px;
     padding: 10px;
+    display: block;
 }
 main h2:hover{
     color: red;
     transition: color 1s;
+}
+ul {
+    list-style-type: none;
+    display: grid;
+}
+li{
+    display: inline;
 }
 .gridParent{
     display: grid;
