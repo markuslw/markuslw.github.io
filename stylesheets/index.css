@@ -1,52 +1,64 @@
-main{
+main {
     font-family:Arial;
-    font-size:20px;
-}
-main h1{
-    color:grey;
-    text-align: center;
-    font-family:Arial;
-    font-size:40px;
-}
-main h2{
-    background-color:black;
-    color:grey;
-    text-align: center;
-    font-family:Arial;
-    font-size: 30px;
-    padding: 10px;
-    display: block;
-}
-main h2:hover{
-    color: red;
-    transition: color 1s;
+    font-size:10px;
 }
 
-ul {
+body {
+    background-color: #343a40;
+    margin: 0;
+}
+
+header {
+    background-color: #212529;
+    padding: 5px;
+}
+
+footer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header h1 {
+    color:white;
+    text-align: center;
+    font-family:Arial;
+    font-size:30px;
+}
+
+main h2 {
+    color:white;
+    text-align: center;
+    font-family:Arial;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+main h2:hover {
+    background-color:#495057;
+}
+
+main ul {
     list-style-type: none;
     display: grid;
 }
-li{
+main li{
     display: inline;
 }
-.gridParent{
+
+footer p {
+    color:white;
+    font-family: Arial;
+    padding-left: 10px;
+}
+
+.gridParent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-}
-.item{
-    background-color:black;
-    color:grey;
-    text-align: center;
-    font-family:Arial;
-    font-size: 30px;
-    padding: 10px;
-    display: block;
-}
-
-.item:hover{
-    color: red;
-    transition: color 1s;
 }
 
