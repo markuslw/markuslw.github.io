@@ -20,11 +20,40 @@ footer {
     justify-content: space-between;
 }
 
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    order: 0;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 35px;
+}
+
+.right svg {
+    padding-top: 10px;
+    padding-right: 10px;
+    width: 50px;
+    height: 50px;
+    fill:white;
+    transition: all 0.5s ease;
+}
+
+.right svg:hover {
+    fill:darkred;
+}
+
 header h1 {
     color:white;
-    text-align: center;
+    text-align: left;
     font-family:Arial;
     font-size:30px;
+    padding-left: 35px;
 }
 
 main h2 {
@@ -50,8 +79,9 @@ main li{
 }
 
 footer p {
-    color:white;
-    font-family: Arial;
+    color:grey;
+    font-family: monospace;
+    text-align: center;
     padding-left: 10px;
 }
 
