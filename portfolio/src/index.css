@@ -1,8 +1,14 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
+  font-display: swap;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
+  font-size: calc(1vw + 1vh);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +16,105 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.welcome-container-v2 {
+  margin: 10vw 10vw 0 10vw; /* Top, right, bottom, left */
+}
+
+.greeting-v2 {
+  opacity: 1;
+}
+
+.biography-v2 {
+  max-width: 25ch;
+  line-height: 1.2;
+}
+
+.icon {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.5em 0 0;
+  fill: black;
+  transition: all 0.5s ease;
+}
+
+.no-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon:hover {
+  fill: red;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+
+@keyframes moving {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-350px, -150px);
+  }
+}
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: moving 1s ease-out forwards;
+  animation-delay: 4s;
+}
+
+.greeting {
+  display: inline-block;
+  white-space: nowrap; /* Text wraps with small width */
+  overflow: hidden; /* Hide the text initially */
+  border-right: 2px solid black; /* Cursor effect */
+  width: 0; /* Start with no text visible, initial value is overwritten by forwards keyword */
+  animation: typing 5s steps(40, end) forwards, blink-caret 1s step-end infinite;
+  animation-delay: 1s; 
+  max-width: 20.2ch;
+  line-height: 1.1;
+}
+
+.biography {
+  display: inline-block;
+  flex-direction: column;
+  margin-left: -1ch;
+  max-width: 25ch; /* Limit width to 10 characters */
+  line-height: 1.1;
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+  animation-delay: 5s;
 }
