@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bf1bf61.css",
-    "main.js": "/static/js/main.19e5f647.js",
+    "main.css": "/static/css/main.f745bf80.css",
+    "main.js": "/static/js/main.a3b41484.js",
     "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/pb.jpg": "/static/media/pb.5b86d2e0e504ade1fa46.jpg",
+    "static/media/uit_logo_white.png": "/static/media/uit_logo_white.c83293628177bdedf783.png",
+    "static/media/uit_logo_black.png": "/static/media/uit_logo_black.71c1a55226f2e6f16d6e.png",
+    "static/media/elkjop_logo.svg": "/static/media/elkjop_logo.ea113aedc19470de1434b5aa36dd0a1d.svg",
     "static/media/github.svg": "/static/media/github.c8360cd40d9c797cea54f9e076e215a4.svg",
     "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.21287100de2629e4648021e8d6d43c18.svg",
-    "main.5bf1bf61.css.map": "/static/css/main.5bf1bf61.css.map",
-    "main.19e5f647.js.map": "/static/js/main.19e5f647.js.map",
+    "main.f745bf80.css.map": "/static/css/main.f745bf80.css.map",
+    "main.a3b41484.js.map": "/static/js/main.a3b41484.js.map",
     "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bf1bf61.css",
-    "static/js/main.19e5f647.js"
+    "static/css/main.f745bf80.css",
+    "static/js/main.a3b41484.js"
   ]
 }
