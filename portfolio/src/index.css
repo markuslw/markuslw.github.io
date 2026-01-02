@@ -18,17 +18,59 @@ code {
     monospace;
 }
 
-.welcome-container-v2 {
+.welcome {
   margin: 10vw 10vw 0 10vw; /* Top, right, bottom, left */
 }
 
-.greeting-v2 {
-  opacity: 1;
+.greeting {
+  color: red;
+  font-weight: bold;
 }
 
-.biography-v2 {
-  max-width: 25ch;
+.biography {
+  max-width: 30ch;
   line-height: 1.2;
+}
+
+.info {
+  font-size: 19px;
+  margin: 0;
+}
+
+.text {
+  font-style: italic;
+}
+
+.separator {
+  margin: 0.5em 0;
+  border: none;
+  border-top: 2px solid black;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  width: 90%;
+}
+
+.indent {
+  text-indent: 5vw;
+}
+
+.indent-large {
+  margin-left: 5vw;
+  width: 80%;
+}
+
+.right {
+  text-align: right;
+  width: 30vw;
 }
 
 .icon {
@@ -39,82 +81,35 @@ code {
   transition: all 0.5s ease;
 }
 
-.no-style {
-  text-decoration: none;
-  color: inherit;
+.phone {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.5em 0 0;
+  fill: black;
+  transition: all 0.5s ease;
+}
+
+.message {
+  width: 20px;
+  height: 20px;
+  margin: 0 0.5em 0 0;
+  fill: black;
+  transition: all 0.5s ease;
 }
 
 .icon:hover {
   fill: red;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.phone:hover {
+  fill: #0077b6;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+.message:hover {
+  fill: greenyellow;
 }
 
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
-
-@keyframes moving {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-350px, -150px);
-  }
-}
-
-.welcome-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  animation: moving 1s ease-out forwards;
-  animation-delay: 4s;
-}
-
-.greeting {
-  display: inline-block;
-  white-space: nowrap; /* Text wraps with small width */
-  overflow: hidden; /* Hide the text initially */
-  border-right: 2px solid black; /* Cursor effect */
-  width: 0; /* Start with no text visible, initial value is overwritten by forwards keyword */
-  animation: typing 5s steps(40, end) forwards, blink-caret 1s step-end infinite;
-  animation-delay: 1s; 
-  max-width: 20.2ch;
-  line-height: 1.1;
-}
-
-.biography {
-  display: inline-block;
-  flex-direction: column;
-  margin-left: -1ch;
-  max-width: 25ch; /* Limit width to 10 characters */
-  line-height: 1.1;
-  white-space: normal; /* Allow text to wrap */
-  word-wrap: break-word;
-  opacity: 0;
-  animation: fadeIn 2s forwards;
-  animation-delay: 5s;
+.no-style {
+  text-decoration: none;
+  color: inherit;
 }
