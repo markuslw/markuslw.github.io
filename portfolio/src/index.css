@@ -4,6 +4,25 @@
     url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
   font-display: swap;
 }
+:root {
+  --bg-color: #ffffff;
+  --text-color: #1a1a1a;
+  --button-bg: #f0f0f0;
+  --svg-color: #000000;
+  --sep-color: #000000;
+  --invert-img: invert(0);
+  --red-color: #950606;
+  --border-radius-px: 10px;
+  --contact-icon-size: 1em;
+}
+[data-theme='dark'] {
+  --bg-color: #121212;
+  --text-color: #f5f5f5;
+  --button-bg: #1e1e1e;
+  --svg-color: #ffffff;
+  --sep-color: #ffffff;
+  --invert-img: invert(1);
+}
 
 body {
   margin: 0;
@@ -11,6 +30,9 @@ body {
   font-size: calc(1vw + 1vh);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 code {
@@ -19,12 +41,27 @@ code {
 }
 
 .welcome {
-  margin: 10vw 10vw 0 10vw; /* Top, right, bottom, left */
+  margin: 10vw; /* Top, right, bottom, left */
+}
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.profile {
+  border-radius: var(--border-radius-px);
+  width: 20vw;
+  height: auto;
 }
 
 .greeting {
-  color: red;
+  color: var(--red-color);
   font-weight: bold;
+  align-items: end;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3.8vw;
 }
 
 .biography {
@@ -32,19 +69,103 @@ code {
   line-height: 1.2;
 }
 
+.title {
+  color: var(--red-color);
+  font-size: 3.2vw;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
 .info {
-  font-size: 19px;
+  font-size: 1em;
   margin: 0;
 }
 
 .text {
   font-style: italic;
+  line-height: 1.0;
+}
+
+.description {
+  max-width: 50vw;
+}
+
+.icon-container {
+  margin-bottom: 1em;
+}
+.icon {
+  width: 2em;
+  height: 2em;
+  margin: 0 0.5em 0 0;
+  fill: var(--svg-color);
+  transition: fill 0.5s ease;
+}
+.icon:hover {
+  fill: var(--red-color);
+}
+
+.invertimg {
+  filter: var(--invert-img);
+  transition: filter 0.3s ease;
+}
+
+.phone {
+  width: var(--contact-icon-size);
+  height: var(--contact-icon-size);
+  margin: 0 0.5em 0 0;
+  fill: var(--svg-color);
+  transition: fill 0.5s ease;
+}
+.phone:hover {
+  fill: #65C466;
+}
+
+.message {
+  width: var(--contact-icon-size);
+  height: var(--contact-icon-size);
+  margin: 0 0.5em 0 0;
+  fill: var(--svg-color);
+  transition: fill 0.5s ease;
+}
+.message:hover {
+  fill: #65C466;
+}
+
+.email {
+  width: var(--contact-icon-size);
+  height: var(--contact-icon-size);
+  margin: 0 0.5em 0 0;
+  fill: var(--svg-color);
+  transition: fill 0.5s ease;
+}
+.email:hover {
+  fill: #007AFF;
+}
+
+.location {
+  width: var(--contact-icon-size);
+  height: var(--contact-icon-size);
+  margin: 0 0.5em 0 0;
+  fill: var(--svg-color);
+  transition: fill 0.5s ease;
+}
+.location:hover {
+  fill: var(--red-color);
 }
 
 .separator {
   margin: 0.5em 0;
   border: none;
-  border-top: 2px solid black;
+  border-top: 2px solid var(--sep-color);
+  transition: border-top 0.3s ease;
+}
+
+.separator-small {
+  margin: 0.5em 0;
+  border: none;
+  border-top: 2px solid var(--sep-color);
+  width: 95%;
+  transition: border-top 0.3s ease;
 }
 
 .column {
@@ -55,12 +176,11 @@ code {
 .table {
   display: grid;
   grid-template-columns: 1fr auto;
-  gap: 10px;
   width: 90%;
 }
 
 .indent {
-  text-indent: 5vw;
+  padding-left: 5vw;
 }
 
 .indent-large {
@@ -68,45 +188,16 @@ code {
   width: 80%;
 }
 
-.right {
-  text-align: right;
-  width: 30vw;
-}
-
-.icon {
-  width: 2em;
-  height: 2em;
-  margin: 0 0.5em 0 0;
-  fill: black;
-  transition: all 0.5s ease;
-}
-
-.phone {
-  width: 20px;
-  height: 20px;
-  margin: 0 0.5em 0 0;
-  fill: black;
-  transition: all 0.5s ease;
-}
-
-.message {
-  width: 20px;
-  height: 20px;
-  margin: 0 0.5em 0 0;
-  fill: black;
-  transition: all 0.5s ease;
-}
-
-.icon:hover {
-  fill: red;
-}
-
-.phone:hover {
-  fill: #0077b6;
-}
-
-.message:hover {
-  fill: greenyellow;
+.button {
+  color: var(--text-color);
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: var(--border-radius-px);
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .no-style {

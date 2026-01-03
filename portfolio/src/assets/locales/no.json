@@ -1,0 +1,42 @@
+{
+    "education": {
+        "title": "Utdanning",
+        "university": "UiT Norges Arktiske Universitet",
+        "masters": "Master i informatikk (MSc)",
+        "bachelors": "Bachelor i informatikk (BSc)"
+    },
+    "experience": {
+        "title": "Erfaring",
+        "university": {
+            "title": "UiT Norges Arktiske Universitet",
+            "position": "Vitenskapelig Assistent",
+            "date_cs": "Høsten 2026",
+            "date_pp": "Høsten 2025",
+            "description":  "Har tidligere bistått forelesere i emnet Parallell Programmering, og skal assistere i det kommende emnet Computer Security for høstsemesteret '26. Arbeidet fokuserer på veiledning av studenter, kollokvier og retting av obligatoriske oppgaver."
+        },
+        "elkjop": {
+            "title": "Elkjøp Nordic",
+            "position": "Salesperson",
+            "date": "Fra 2024",
+            "description": "Jobber nåværende som selger ved Phonehouse-avdelingen til Elkjøp Nordic. Mine ansvarsområder innebærer blant annet å analysere kundebehov og gi anbefalinger for ulike produkter som mobiltelefoner, mobilabonnement, forsikringer og betalingsløsninger."
+        }
+    },
+    "projects": {
+        "title": "Prosjekter og fritidsaktiviteter",
+        "procmon": {
+            "title": "Process Monitor",
+            "date": "Høsten 2025",
+            "description": "For å benchmarke ulike løsninger utviklet i løpet av mastergraden min, laget jeg et C-program som viser og logger en brukerdefinert prosess med spesifiserte variabler."
+        },
+        "freelance": {
+            "title": "Frilansutvikler",
+            "date": "Sommeren 2024",
+            "description": "Som fullstack-utvikler designet og utviklet jeg front-end og back-end for en webapplikasjon basert på Model-View-Controller-arkitekturen (MVC) i C# med .NET-rammeverket."
+        },
+        "bsc_thesis": {
+            "title": "Bacheloroppgave",
+            "date": "Høsten 2024",
+            "description": "I forbindelse med en prosjekteksamen benyttet teamet mitt den agile metoden SCRUM. Gjennom sprinter utviklet vi en webapplikasjon som fungerer som en sosial plattform, med støtte for token-basert autentisering og autorisering, databasekryptering, opprettelse av kontoer og deling av media."
+        }
+    }
+}

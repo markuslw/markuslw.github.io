@@ -1,0 +1,42 @@
+{
+    "education": {
+        "title": "Education",
+        "university": "UiT Norges Arktiske Universitet",
+        "masters": "Master of Science (MSc) in Computer Science",
+        "bachelors": "Bachelor of Science (BSc) in Computer Science"
+    },
+    "experience": {
+        "title": "Professional Experience",
+        "university": {
+            "title": "UiT Norges Arktiske Universitet",
+            "position": "Scientific Assistant",
+            "date_cs": "Fall 2026",
+            "date_pp": "Autumn 2025",
+            "description":  "Previously assisted lecturers on Computer Science course Parallel Programming and assisting on upcoming course Computer Security for the ’26 Fall semester. My work focused on guiding students, hosting colloquiums, and grading assignments."
+        },
+        "elkjop": {
+            "title": "Elkjøp Nordic",
+            "position": "Salesperson",
+            "date": "As of 2024",
+            "description": "Currently working as a salesperson at the Phonehouse branch of Elkjøp Nordic. My responsibilities involved analyzing customer needs and providing recommendations for various products such as mobile phones, cellular plans, insurance, and payment plans."
+        }
+    },
+    "projects": {
+        "title": "Projects and extracurricular",
+        "procmon": {
+            "title": "Process Monitor",
+            "date": "Autumn 2025",
+            "description": "To benchmark various solutions developed during my master’s degree, I created a C program that displays and logs a user-specified process with user-specified variables."
+        },
+        "freelance": {
+            "title": "Freelance Developer",
+            "date": "Summer 2024",
+            "description": "As a full-stack developer, I designed and developed the front-end and back-end of a web application using the Model-View-Controller architecture in C# with the .NET framework."
+        },
+        "bsc_thesis": {
+            "title": "Bachelor's Thesis",
+            "date": "Fall 2024",
+            "description": "For a project exam, my team adopted the agile method SCRUM. Through sprints, we developed a web application that serves as a social platform, enabling token-based user authentication and authorization, database encryption, account creation, and media sharing."
+        }
+    }
+}
