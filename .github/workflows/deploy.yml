@@ -2,7 +2,7 @@ name: Deploy React App to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # Change if your default branch is different
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -18,14 +18,20 @@ jobs:
         with:
           node-version: '18'
           cache: 'npm'
+          # Tell the action where the lock file is located
+          cache-dependency-path: portfolio/package-lock.json
 
       - name: Install dependencies
+        # Use 'working-directory' to run commands inside the subfolder
+        working-directory: ./portfolio
         run: npm install
 
       - name: Build the app
+        working-directory: ./portfolio
         run: npm run build
 
       - name: Deploy to GitHub Pages
+        working-directory: ./portfolio
         run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
