@@ -33,8 +33,11 @@ jobs:
           CI: false  # This prevents warnings from being treated as errors
 
       - name: Deploy to GitHub Pages
-        working-directory: ./portfolio
-        run: npm run deploy
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          npm run deploy
         env:
           CI: false
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
