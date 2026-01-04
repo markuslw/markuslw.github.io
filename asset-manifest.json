@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b6584abe.css",
-    "main.js": "/portfolio/static/js/main.25cf017b.js",
-    "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
-    "static/media/pb.jpg": "/portfolio/static/media/pb.5b86d2e0e504ade1fa46.jpg",
-    "static/media/uit_logo_white.png": "/portfolio/static/media/uit_logo_white.c83293628177bdedf783.png",
-    "static/media/uit_logo_black.png": "/portfolio/static/media/uit_logo_black.71c1a55226f2e6f16d6e.png",
-    "static/media/tm_logo.jpg": "/portfolio/static/media/tm_logo.01b679858a21b5c2f120.jpg",
-    "static/media/elkjop_logo.svg": "/portfolio/static/media/elkjop_logo.ea113aedc19470de1434b5aa36dd0a1d.svg",
-    "static/media/github.svg": "/portfolio/static/media/github.c8360cd40d9c797cea54f9e076e215a4.svg",
-    "index.html": "/portfolio/index.html",
-    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.21287100de2629e4648021e8d6d43c18.svg",
-    "main.b6584abe.css.map": "/portfolio/static/css/main.b6584abe.css.map",
-    "main.25cf017b.js.map": "/portfolio/static/js/main.25cf017b.js.map"
+    "main.css": "/static/css/main.53170549.css",
+    "main.js": "/static/js/main.8a4d52fa.js",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
+    "static/media/pb.jpg": "/static/media/pb.5b86d2e0e504ade1fa46.jpg",
+    "static/media/uit_logo_white.png": "/static/media/uit_logo_white.c83293628177bdedf783.png",
+    "static/media/uit_logo_black.png": "/static/media/uit_logo_black.71c1a55226f2e6f16d6e.png",
+    "static/media/tm_logo.jpg": "/static/media/tm_logo.01b679858a21b5c2f120.jpg",
+    "static/media/elkjop_logo.svg": "/static/media/elkjop_logo.ea113aedc19470de1434b5aa36dd0a1d.svg",
+    "static/media/github.svg": "/static/media/github.c8360cd40d9c797cea54f9e076e215a4.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.21287100de2629e4648021e8d6d43c18.svg",
+    "main.53170549.css.map": "/static/css/main.53170549.css.map",
+    "main.8a4d52fa.js.map": "/static/js/main.8a4d52fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.b6584abe.css",
-    "static/js/main.25cf017b.js"
+    "static/css/main.53170549.css",
+    "static/js/main.8a4d52fa.js"
   ]
 }
