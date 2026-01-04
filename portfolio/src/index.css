@@ -11,7 +11,7 @@
   --svg-color: #000000;
   --sep-color: #000000;
   --invert-img: invert(0);
-  --red-color: #950606;
+  --title-text-color: #950606;
   --border-radius-px: 10px;
   --contact-icon-size: 1em;
 }
@@ -21,6 +21,7 @@
   --button-bg: #1e1e1e;
   --svg-color: #ffffff;
   --sep-color: #ffffff;
+  --title-text-color: #ff4b33;
   --invert-img: invert(1);
 }
 
@@ -56,12 +57,12 @@ code {
 }
 
 .greeting {
-  color: var(--red-color);
+  color: var(--title-text-color);
   font-weight: bold;
   align-items: end;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 3.8vw;
+  font-size: min(3.8vw, 70px);
 }
 
 .biography {
@@ -70,15 +71,15 @@ code {
 }
 
 .title {
-  color: var(--red-color);
-  font-size: 3.2vw;
+  color: var(--title-text-color);
+  font-size: min(3.2vw, 45px);
   margin-top: 20px;
   margin-bottom: 0px;
 }
 
 .info {
   font-size: 1em;
-  margin: 0;
+  margin: 0.5vw;
 }
 
 .text {
@@ -96,12 +97,39 @@ code {
 .icon {
   width: 2em;
   height: 2em;
-  margin: 0 0.5em 0 0;
+  margin: 0 0.5em 0 0; /* Top, right, bottom, left */
   fill: var(--svg-color);
   transition: fill 0.5s ease;
 }
 .icon:hover {
-  fill: var(--red-color);
+  fill: var(--title-text-color);
+}
+
+.icon-extras {
+  border: none;
+  border-radius: var(--border-radius-px);
+}
+
+.button {
+  color: var(--text-color);
+  background-color: var(--button-bg);
+  border: none;
+  border-radius: var(--border-radius-px);
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.control {
+  width: 2em;
+  height: 2em;
+  margin: 0; /* Top, right, bottom, left */
+  fill: var(--svg-color);
+  transition: fill 0.5s ease;
+}
+.button:hover .control {
+  fill: var(--title-text-color);
 }
 
 .invertimg {
@@ -150,20 +178,20 @@ code {
   transition: fill 0.5s ease;
 }
 .location:hover {
-  fill: var(--red-color);
+  fill: #d3494e;
 }
 
 .separator {
-  margin: 0.5em 0;
+  margin: calc(2em - 3vh) 0 1em 0; /* Top, right, bottom, left */
   border: none;
-  border-top: 2px solid var(--sep-color);
+  border-top: calc(0.2vh + 0.2vw) solid var(--sep-color);
   transition: border-top 0.3s ease;
 }
 
 .separator-small {
-  margin: 0.5em 0;
+  margin: calc(2em - 3vh) 0 1em 0; /* Top, right, bottom, left */
   border: none;
-  border-top: 2px solid var(--sep-color);
+  border-top: calc(0.2vh + 0.2vw) solid var(--sep-color);
   width: 95%;
   transition: border-top 0.3s ease;
 }
@@ -186,21 +214,4 @@ code {
 .indent-large {
   margin-left: 5vw;
   width: 80%;
-}
-
-.button {
-  color: var(--text-color);
-  background-color: var(--button-bg);
-  border: none;
-  border-radius: var(--border-radius-px);
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.no-style {
-  text-decoration: none;
-  color: inherit;
 }
