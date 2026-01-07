@@ -1,0 +1,27 @@
+{
+    "skills": {
+        "title": "Skills",
+        "languages": {
+            "title": "Languages",
+            "programming": ["C", "Python", "JavaScript", "C#", "C++", "Lua", "R", "CUDA"],
+            "scripting": ["PowerShell", "Bash", "Zsh"],
+            "database": ["SQL", "ChromaDB", "MongoDB"],
+            "web": ["CSS", "HTML"],
+            "markup": ["Markdown", "XML", "YAML", "JSON"],
+            "documentation": ["LaTeX", "Doxygen"]
+        },
+        "frameworks": {
+            "title": "Frameworks and Libraries",
+            "front": ["React", "CSHTML"],
+            "back": ["ASP.NET", "Django", "Flask"],
+            "libraries": ["Azure", "MPI", "OpenMP"]
+        },
+        "tools": {
+            "title": "Tools and Platforms",
+            "development": ["Git", "RStudio", "Visual Studio", "VS Code"],
+            "productivity": ["MS365", "GIMP", "Adobe Lightroom", "Adobe Photoshop", "DaVinci Resolve", "Adobe Premiere"],
+            "virtualization": ["Oracle Virtualbox", "Broadcom VMware", "Bochs"],
+            "os": ["Windows", "Linux", "WSL"]
+        }
+    }
+}

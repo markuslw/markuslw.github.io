@@ -16,7 +16,7 @@
   --contact-icon-size: 1em;
 }
 [data-theme='dark'] {
-  --bg-color: #121212;
+  --bg-color: #202020;
   --text-color: #f5f5f5;
   --button-bg: #1e1e1e;
   --svg-color: #ffffff;

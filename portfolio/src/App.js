@@ -10,6 +10,7 @@ import pb from './assets/imgs/pb.jpg';
 import emoji from "react-easy-emoji";
 import en from './assets/locales/en.json';
 import no from './assets/locales/no.json';
+import common from './assets/locales/common.json';
 
 function App() {
 
@@ -21,6 +22,11 @@ function App() {
     const saved = localStorage.getItem('darkmode');
     return saved === 'true' || false;
   });
+
+  const skills = common.skills;
+  const languages = skills.languages;
+  const frameworks = skills.frameworks;
+  const tools = skills.tools;
 
   const content = language === 'en' ? en : no;
 
@@ -191,18 +197,17 @@ function App() {
         {/* TEKNIKMAGASINET */}
         <div className="column">
           <img className="icon icon-extras" src={tmlogo} alt="Logo" />
-          <h3>Teknikmagasinet Norge</h3>
+          <h3>{content.experience.teknikmagasinet.title}</h3>
         </div>
         <div className="indent">
           <div className="table">
-            <p>Seller</p>
-            <p className="right">2021-2023</p>
+            <p>{content.experience.teknikmagasinet.position}</p>
+            <p className="right">{content.experience.teknikmagasinet.date}</p>
           </div>
         </div>
         <p className="indent-large text">
-          Lorem Ipsum dolor sit amet, ... , etc.
+          {content.experience.teknikmagasinet.description}
         </p>
-
         
         <br />
 
@@ -235,6 +240,53 @@ function App() {
         <p className="indent-large text">
           {content.projects.bsc_thesis.description}
         </p>
+
+        <br />
+
+        <h2 className="title">{skills.title}</h2>
+        <hr className="separator" />
+
+        <h3>{languages.title}</h3>
+        {Object.entries(languages).map(([key, list]) => {
+          if (key === 'title') return null;
+
+          return (
+            <div key={key}>
+                {list.map(item => (
+                  <p key={item}>{item}</p>
+                ))}
+            </div>
+          );
+        })}
+        <br />
+
+        <h3>{frameworks.title}</h3>
+        {Object.entries(frameworks).map(([key, list]) => {
+          if (key === 'title') return null;
+          
+          return (
+            <div key={key}>
+                {list.map(item => (
+                  <p key={item}>{item}</p>
+                ))}
+            </div>
+          );
+        })}
+        <br />
+
+        <h3>{tools.title}</h3>
+        {Object.entries(tools).map(([key, list]) => {
+          if (key === 'title') return null;
+          
+          return (
+            <div key={key}>
+                {list.map(item => (
+                  <p key={item}>{item}</p>
+                ))}
+            </div>
+          );
+        })}
+        <br />
 
       </div>
     </div>

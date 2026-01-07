@@ -19,6 +19,12 @@
             "position": "Salesperson",
             "date": "As of 2024",
             "description": "Currently working as a salesperson at the Phonehouse branch of Elkjøp Nordic. My responsibilities involved analyzing customer needs and providing recommendations for various products such as mobile phones, cellular plans, insurance, and payment plans."
+        },
+        "teknikmagasinet": {
+            "title": "Teknikmagsinet Norway",
+            "position": "Seller",
+            "date": "2021 - 2023",
+            "description": "Previously worked as a seller for Teknikmagasinet Norway. Aside from selling, my position included working as a repair technician where i did repairs on displays, batteries, and the TrueDepth camera system."
         }
     },
     "projects": {
