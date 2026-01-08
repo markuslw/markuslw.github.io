@@ -27,6 +27,7 @@ function App() {
   const languages = skills.languages;
   const frameworks = skills.frameworks;
   const tools = skills.tools;
+  const architecture = skills.architecture;
 
   const content = language === 'en' ? en : no;
 
@@ -288,6 +289,23 @@ function App() {
         </div>
         <div className="indent-large container">
           {Object.entries(tools).map(([key, list]) => {
+            if (key === 'title') return null;
+            
+            return list.map(item => (
+              <p key={item} className="text skillpoint">{item}</p>
+            ));
+          })}
+        </div>
+        <br />
+
+        <div className="column">
+          <svg className="icon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M4 6a2 2 0 1 1 0 4 2 2 0 0 1 0-4m2.625.547a3 3 0 0 0-5.584.953H.5a.5.5 0 0 0 0 1h.541A3 3 0 0 0 7 8a1 1 0 0 1 2 0 3 3 0 0 0 5.959.5h.541a.5.5 0 0 0 0-1h-.541a3 3 0 0 0-5.584-.953A2 2 0 0 0 8 6c-.532 0-1.016.208-1.375.547M14 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0"/>
+          </svg>
+          <h3>{architecture.title}</h3>
+        </div>
+        <div className="indent-large container">
+          {Object.entries(architecture).map(([key, list]) => {
             if (key === 'title') return null;
             
             return list.map(item => (
