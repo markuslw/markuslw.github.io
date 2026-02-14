@@ -4,7 +4,7 @@
         "languages": {
             "title": "Languages",
             "programming": ["C", "Python", "JavaScript", "C#", "C++", "Lua", "R", "CUDA", "Jupyter Notebook"],
-            "scripting": ["PowerShell", "Bash", "Zsh", "BAT"],
+            "scripting": ["PowerShell", "Bash", "Zsh", "BAT", "Ansible"],
             "query": ["SQL"],
             "web": ["CSS", "HTML"],
             "markup": ["Markdown", "XML"],
@@ -21,17 +21,17 @@
         },
         "tools": {
             "title": "Tools and Platforms",
-            "development": ["Git", "RStudio", "Visual Studio", "VS Code", "Doxygen", "SQLite", "ChromaDB", "MongoDB"],
+            "development": ["Git", "RStudio", "Visual Studio", "VS Code", "Doxygen", "SQLite", "ChromaDB", "MongoDB", "Neovim"],
             "software": ["Wireshark"],
             "platform": ["Entra ID"],
             "protocols": ["SSH", "OpenID"],
             "productivity": ["MS365", "GIMP", "Adobe Lightroom", "Adobe Photoshop", "DaVinci Resolve", "Adobe Premiere"],
             "virtualization": ["Oracle Virtualbox", "Broadcom VMware", "Bochs"],
-            "os": ["Windows", "Linux", "WSL"]
+            "os": ["Windows", "Arch Linux", "Ubuntu Linux", "WSL"]
         },
         "architecture": {
             "title": "Architecture and concepts",
-            "networking": ["TCP/IP", "OSI Model", "HTTPS/TLS", "DNS", "DHCP", "NAT", "REST", "CAP", "Distributed Systems"],
+            "networking": ["TCP/IP", "OSI Model", "HTTPS/TLS", "DNS", "DHCP", "NAT", "REST", "CAP", "Distributed Systems", "Sharding", "Replication"],
             "security": ["RBAC", "ABAC", "AES", "RSA", "ACID"],
             "computer": ["ISA", "Parallel Computing", "Virtual Memory", "Memory Hierarchy", "OOP", "Synchronization", "Race Conditions"]
         }

@@ -1,9 +1,10 @@
 @font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
+  font-family: "Noto Sans";
+  src: local("Noto Sans"),
+    url("./assets/fonts/NotoSans-Regular.ttf") format("woff");
   font-display: swap;
 }
+
 :root {
   --bg-color: #ffffff;
   --text-color: #1a1a1a;
@@ -13,7 +14,16 @@
   --invert-img: invert(0);
   --title-text-color: #950606;
   --border-radius-px: 10px;
-  --contact-icon-size: 1em;
+
+  --font-size-name:     clamp(16px, 4.2vw, 48px);
+  --font-size-section:  clamp(14px, 3.8vw, 42px);
+  --font-size-title:    clamp(12px, 3.0vw, 34px);
+  --font-size-position: clamp(10px, 2.4vw, 28px);
+  --font-size-text:     clamp(10px, 2.2vw, 26px);
+  --font-size-info:     clamp(8px, 2.0vw, 24px);
+
+  --link-icon-size:     clamp(20px, 2.4vw, 60px);
+  --contact-icon-size:  clamp(16px, 1.4vw, 30px);
 }
 [data-theme='dark'] {
   --bg-color: #202020;
@@ -27,13 +37,12 @@
 
 body {
   margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  font-size: calc(1vw + 1vh);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Noto Sans, "Noto Sans", Monsserrat, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 code {
@@ -42,7 +51,9 @@ code {
 }
 
 .welcome {
-  margin: 10vw; /* Top, right, bottom, left */
+  max-width: 400mm;
+  margin: 10vw auto;
+  width: 80%;
 }
 
 .intro {
@@ -62,7 +73,7 @@ code {
   align-items: end;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: min(3.8vw, 70px);
+  font-size: var(--font-size-name);
 }
 
 .biography {
@@ -70,24 +81,36 @@ code {
   line-height: 1.2;
 }
 
+.indent p {
+  font-size: clamp(12px, 2.8vw, 28px);
+}
+
 .title {
   color: var(--title-text-color);
-  font-size: min(3.2vw, 45px);
+  font-size: var(--font-size-section);
   margin-top: 20px;
   margin-bottom: 0px;
 }
 
 .info {
-  font-size: 1em;
+  font-size: var(--font-size-info);
+  font-style: italic;
+  line-height: 1.0;
   margin: 0.5vw;
 }
 
 .text {
+  font-size: var(--font-size-text);
   font-style: italic;
-  line-height: 1.0;
+  line-height: 1.1;
 }
 
-.description {
+.organization { 
+  font-size: var(--font-size-title);
+}
+
+.position {
+  font-size: var(--font-size-position) !important;
   max-width: 50vw;
 }
 
@@ -95,8 +118,8 @@ code {
   margin-bottom: 1em;
 }
 .icon {
-  width: 2em;
-  height: 2em;
+  width: var(--link-icon-size);
+  height: var(--link-icon-size);
   margin: 0 0.5em 0 0; /* Top, right, bottom, left */
   fill: var(--svg-color);
   transition: fill 0.5s ease;

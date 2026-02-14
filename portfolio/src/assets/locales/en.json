@@ -10,8 +10,10 @@
         "university": {
             "title": "UiT Norges Arktiske Universitet",
             "position": "Scientific Assistant",
-            "date_cs": "Fall 2026",
-            "date_pp": "Autumn 2025",
+            "date": {
+                "cs": "Fall 2026",
+                "pp": "Autumn 2025"
+            },
             "description":  "Previously assisted lecturers on Computer Science course Parallel Programming and assisting on upcoming course Computer Security for the ’26 Fall semester. My work focused on guiding students, hosting colloquiums, and grading assignments."
         },
         "elkjop": {

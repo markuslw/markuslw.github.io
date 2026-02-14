@@ -10,8 +10,10 @@
         "university": {
             "title": "UiT Norges Arktiske Universitet",
             "position": "Vitenskapelig Assistent",
-            "date_cs": "Høsten 2026",
-            "date_pp": "Høsten 2025",
+            "date": {
+                "cs": "Vår 2026",
+                "pp": "Høst 2025"
+            },
             "description":  "Har tidligere bistått forelesere i emnet Parallell Programmering, og skal assistere i det kommende emnet Computer Security for høstsemesteret '26. Arbeidet fokuserer på veiledning av studenter, kollokvier og retting av obligatoriske oppgaver."
         },
         "elkjop": {
