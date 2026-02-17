@@ -11,10 +11,10 @@
             "title": "UiT Norges Arktiske Universitet",
             "position": "Scientific Assistant",
             "date": {
-                "cs": "Fall 2026",
+                "cs": "Spring 2026",
                 "pp": "Autumn 2025"
             },
-            "description":  "Previously assisted lecturers on Computer Science course Parallel Programming and assisting on upcoming course Computer Security for the ’26 Fall semester. My work focused on guiding students, hosting colloquiums, and grading assignments."
+            "description":  "Previously assisted lecturers on Computer Science course Parallel Programming and assisting on upcoming course Computer Security for the ’26 Spring semester. My work focused on guiding students, hosting colloquiums, and grading assignments."
         },
         "elkjop": {
             "title": "Elkjøp Nordic",
@@ -43,7 +43,7 @@
         },
         "bsc_thesis": {
             "title": "Bachelor's Thesis",
-            "date": "Fall 2024",
+            "date": "Spring 2024",
             "description": "For a project exam, my team adopted the agile method SCRUM. Through sprints, we developed a web application that serves as a social platform, enabling token-based user authentication and authorization, database encryption, account creation, and media sharing."
         }
     }
